@@ -57,6 +57,7 @@ sql_connection=mysql://<%= @user %>:<%= @passwd %>@<%= @db_ipaddress %>/<%= @db_
 connection_type=libvirt
 libvirt_type=<%= @virt_type %>
 root_helper=sudo nova-rootwrap
+rootwrap_config=/etc/nova/rootwrap.conf
 remove_unused_base_images=true
 remove_unused_original_minimum_age_seconds=360
 
